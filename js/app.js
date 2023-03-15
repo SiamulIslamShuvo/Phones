@@ -11,6 +11,7 @@ const displayData = (phones, dataLimit) => {
   phoneContainer.textContent = "";
   //   display 9 phones only and show all others
   const showAll = document.getElementById("show-all");
+  // note
   if (dataLimit && phones.length > 9) {
     phones = phones.slice(0, 9);
     showAll.classList.remove("d-none");
